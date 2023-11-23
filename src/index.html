@@ -1,44 +1,321 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/main.scss" />
-    <style>
-      @font-face {
-        font-family: 'TheGlovest';
-        src: url('fonts/TheGloves.ttf') format('truetype');
-      }
-      </style>
+    <title>Furieuse</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <h1>caca</h1>
 
-    <script src="js/main.js" type="module"></script>
-  </body>
-</html>
-<main>
-  <div class="landing-page">
-    <p>section 1</p>
-    <p>landing page</p>
-  </div>
-  <div class="storytelling">
-    <p>section 2</p>
-    <p>insert images here</p>
-  </div>
-  <div class="horizontal">
-    <div class="spacer h-50">spacer</div>
-    <div class="slider-mask h-100">
-      <div class="slider-track">
-        <div class="screen screen-1">screen 1</div>
-        <div class="screen screen-2">screen 2</div>
-        <div class="screen screen-3">screen 3</div>
-        <div class="screen screen-4">screen 4</div>
+  <body>
+    <div class="loading">
+      <div class="loading_image">
+        <img class="loading_image_sword" src="./img/epee.png" alt="L'epee" />
+        <svg
+          class="loading_image_progress"
+          width="auto"
+          height="845px"
+          viewBox="0 0 590 65"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="590" height="65" fill="white" />
+          <rect
+            width="558"
+            height="4px"
+            transform="translate(16 31)"
+            fill="#787880"
+            fill-opacity="0.16"
+          />
+          <rect
+            class="loading_red"
+            transform="translate(16 31)"
+            width="558"
+            height="4"
+            fill="#C72734"
+          />
+        </svg>
       </div>
     </div>
-    <div class="spacer h-100">spacer</div>
-</main>
-<footer>
-  <p>section 3</p>
-</footer>
+
+    <main class="container">
+      <section class="furious">
+        <header>
+          <h1 class="furious_header">
+            <img
+              class="furious_header_primary"
+              src="./img/titre-noir 1.jpg"
+              alt="Furieuse"
+            />
+            <p class="instruction">
+              Scrollez pour découvrir <br />
+              ↓
+            </p>
+          </h1>
+        </header>
+
+        <div class="furious_lady">
+          <img src="./img/dormir 1.jpg" alt="Ysabelle dort dans son lit" />
+        </div>
+      </section>
+      <section>
+        <div class="bordure">
+          <div class="bordure_top">
+            <img
+              class="bordure_top_image"
+              src="./img/bordure 1.png"
+              alt="decoration autour du texte"
+            />
+          </div>
+          <p class="bordure_detail">
+            a l'interieur du chateau du roi arthur, nous retrouvons la princesse
+            ysabelle qui se prepare pour rencontrer son pretendu...
+          </p>
+          <div class="bordure_bottom">
+            <img
+              class="bordure_bottom_image"
+              src="./img/bordure 2.png"
+              alt="decoration autour du texte"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="ysa">
+        <div class="ysa-1">
+          <div class="ysa-1_parent flex">
+            <img
+              class="ysa-1_mirror"
+              src="./img/mirroir-sans-fond 1.png"
+              alt="ysa se regarde dans le mirroir"
+            />
+            <img
+              class="ysa-1_chat"
+              src="./img/mirror_chat.png"
+              alt="ce soir je rencontre ce vieux porc, dit ysa"
+            />
+          </div>
+        </div>
+        <div class="ysa-2">
+          <div class="ysa-2_parent flex flex_column">
+            <img
+              class="ysa-2_gossip"
+              src="./img/ysa-2.png"
+              alt="ysa s'habille avec l'aide de sa servante"
+            />
+            <img
+              class="ysa-2_chat flex_child"
+              src="./img/ysa-2_chat.png"
+              alt="je me demande pourquoi maxine a fui, se demande ysa"
+            />
+            <img
+              class="zizi flex_child"
+              src="./img/zizi.png"
+              alt="sa servante a l'image du zizi du baron"
+            />
+          </div>
+        </div>
+        <div class="ysa-3">
+          <div class="ysa-3_parent flex flex_column">
+            <img
+              class="flex_child ysa-3_nouveau"
+              src="./img/nouveau-visage 1.png"
+              alt="ysa mange a la table"
+            />
+            <img
+              class="flex_child ysa-3_chat"
+              src="./img/nouveau-visage-1_chat.png"
+              alt="Je hais mon pere de m'avoir promise a ce baron! exclame ysa"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="bb-baron">
+        <div class="bb-baron_parent flex flex_column">
+          <img
+            class="bb-baron_visage flex_child"
+            src="./img/nouveau-visage-rouge 2.png"
+            alt="ysa est choquer par ce que dit le baron à côté d'elle"
+          />
+          <img
+            class="bb-baron_chat flex_child"
+            src="./img/nouveau-visage-rouge_2_chat.png"
+            alt="certes, je suis assez âgé mais pas d'inquiétude, j'ai encore toute ma vigeur de jeune homme! dit le baron"
+          />
+        </div>
+      </section>
+
+      <section class="titre">
+        <div class="hScroll la enerver_parent flex flex_column">
+          <img
+            class="enerver_image"
+            src="./img/enerver.png"
+            alt="ysa devient rouge de colere"
+            class="enerver_parent_image"
+          />
+          <img
+            class="enerver_chat flex_child"
+            src="./img/titre 1.png"
+            alt="furieuse apparait sur sa tete "
+          />
+        </div>
+        <div class="hScroll la quotes">
+          <div class="quote quotes_one">
+            <div class="flex flex_column quotes_one_detail">
+              “Bande dessinée qui prend le contre-pied des contes et légendes !”
+              <p class="quote_citation quotes_one_citation">
+                -David (Club BD de Lannion)
+              </p>
+            </div>
+          </div>
+          <div class="quote quotes_two">
+            <div class="flex flex_column qutoes_two_detail">
+              “Furieuse est une création pleine d’humour potache, détruisant un
+              à un les tropes d’une épopée chevaleresque”
+              <p class="quote_citation quotes_two_citation">
+                -Aethrtys (SyFantasy)
+              </p>
+            </div>
+          </div>
+          <div class="quote quotes_three">
+            <div class="flex flex_column qutoes_three_detail">
+              “Furieuse, c'est un petit bonbon acidulé qui t'arrache la bouche.
+              Et bien, vous savez quoi ? On en redemande !”
+
+              <p class="quote_citation quotes_three_citation">
+                -Stephane (Sens critique)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hScroll book flex flex_child">
+          <div class="book_plan">
+            <img class="book_plan_img" src="./img/titre 1.png" alt="Furieuse" />
+            <h2 class="book_plan_header">geoffroy monde & mathieu burinat</h2>
+            <div class="book_plan_time">
+              <div class="book_plan_time_pages">240 pages</div>
+              <div class="book_plan_time_hors">hors collection dargaud</div>
+              <div class="book_plan_time_isbn">isbn : 9782205203226</div>
+            </div>
+            <div class="book_plan_detail">
+              <p>
+                Découvrez le roi Arthur dans un état épouvantable, ivre et sans
+                plus aucune envie de vivre. Sa fille Ysabelle, promise à un
+                horrible baron, décide de s’enfuir juste avant son mariage et va
+                à la recherche de sa sœur, accompagnée par l’épée magique forgée
+                par Merlin. Mais les épreuves se succéderont pour la princesse
+                rebelle, qui n’avait jamais mis les pieds hors du château, et
+                ses alliés ne seront pas toujours animés des meilleures
+                intentions. Une relecture de la légende pleine d’humour, avec
+                une héroïne énergique et haute en couleur.
+              </p>
+            </div>
+            <div class="book_plan_button">
+              <a href="https://www.dargaud.com/9e-store" target="_blank"
+                ><button class="book_plan_button">j'achete</button>
+              </a>
+            </div>
+          </div>
+          <div class="book_img">
+            <img src="./img/couv-sabsfond 1.png" alt="" />
+          </div>
+          <div class="achter">
+            <img class="achter_img" src="./img/acheter 2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer_img">
+          <a href="fromage.html"
+            ><img src="./img/tete 1.png" alt="ysa a faim"
+          /></a>
+        </div>
+        <div class="visite">
+          <h2 class="visite_para">
+            visite <br />
+            culinaire <br />
+            de pendragon
+          </h2>
+          <img
+            class="visite_img"
+            src="./img/arrow.png"
+            alt="fleche ver un lien"
+          />
+        </div>
+        <div class="footer_achter">
+          <img
+            class="footer_achter_img"
+            src="./img/acheter 2.png"
+            alt="acheter"
+          />
+        </div>
+        <div class="list_gap">
+          <div class="list">
+            <h2 class="list_header">rubriques</h2>
+            <ul class="list_ul">
+              <li class="list_li">Recommencer les animations</li>
+              <li class="list_li">
+                <a
+                  href="https://www.dargaud.com/bd/furieuse-bda5430320"
+                  target="_blank"
+                  >Avis</a
+                >
+              </li>
+              <li class="list_li">
+                <a href="https://www.dargaud.com/9e-store" target="_blank"
+                  >Acheter</a
+                >
+              </li>
+              <li class="list_li">
+                <a href="fromage.html" target="_blank"
+                  >Visite culinaire de Pendragon</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="list">
+            <h2 class="list_header">reseaux</h2>
+            <ul class="list_ul">
+              <li class="list_li">
+                <a
+                  href="https://www.instagram.com/geoffroymonde/"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li class="list_li">
+                <a
+                  href="https://www.youtube.com/@editionsdargaud/featured"
+                  target="_blank"
+                  >Youtube</a
+                >
+              </li>
+              <li class="list_li">
+                <a href="https://www.behance.net/" target="_blank">Behance</a>
+              </li>
+              <li class="list_li">
+                <a
+                  href="https://www.goodreads.com/book/show/62950781-furieuse?from_search=true&from_srp=true&qid=hzXHnhMumQ&rank=2"
+                  target="_blank"
+                  >Goodreads</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer_line">
+          <img src="./img/Rectangle 4.jpg" alt="" />
+          <p class="Copyright">
+            Copyright (© 2022 Furieuse. Tous droits réservés.)
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="./js/main.js"></script>
+</html>

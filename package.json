@@ -34,5 +34,10 @@
     "posthtml-include": "^1.7.1",
     "rimraf": "^3.0.2",
     "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugins": "^1.0.8"
   }
 }
