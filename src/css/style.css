@@ -42,19 +42,21 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  z-index: -1;
+  z-index: 0;
 }
 
 .loading_image {
   width: 545px;
   height: 545px;
   position: relative;
-  z-index: -1;
+  z-index: 2;
 }
 
 .loading_image_sword {
   width: 100%;
-  height: 80%;
+  height: auto;
+  z-index: 15;
+  /* i have tried literally everything - im too stupid for this shit why wont it just go on top. im going to cry */
 }
 
 .loading_image_progress {
@@ -70,7 +72,7 @@ p {
 }
 
 .container header {
-  flex: 1;
+  flex: -1;
 }
 
 .furious_header {
@@ -79,7 +81,7 @@ p {
   width: 80%;
   margin: 0 auto;
   position: relative;
-  z-index: 5;
+  z-index: -1;
 }
 .furious_header .instruction {
   width: 20%;
@@ -88,15 +90,19 @@ p {
   color: var(--gris, rgba(0, 0, 0, 0.5));
   font-weight: 400;
   text-align: center;
+  z-index: -1;
 }
 
 .furious_header_primary {
   flex-grow: 1;
   width: 100%;
+  z-index: -1;
 }
 
 .furious_lady {
   display: flex;
+  z-index: -1;
+  /* i am .furious_lady coding this shit */
 }
 
 .furious_lady img {
@@ -104,6 +110,7 @@ p {
   flex-grow: 1;
   width: 100%;
   background-color: white;
+  z-index: -1;
 }
 
 .bordure {
@@ -174,6 +181,7 @@ p {
   flex-grow: 1;
   align-self: center;
   transform-origin: 0% 60%;
+  /* i named it _chat on too little sleep and idk why. it took me 5 minuits to realise i wrote it in english and wasnt talking about cats */
 }
 
 .ysa-2 {
@@ -201,7 +209,10 @@ p {
 
   transform-origin: center bottom;
 }
-
+.custom-cursor {
+  cursor: url("../img/cursor.png"), auto;
+  /* haha nice */
+}
 .ysa-3 {
   position: relative;
 }
@@ -262,6 +273,7 @@ p {
 .hscroll {
   height: 1117px;
   width: 6220px;
+  /* i am never doing this again 1/10 */
 }
 .quotes {
   background-color: black;
@@ -323,7 +335,6 @@ p {
 
 .book_plan_img {
   width: 326px;
-  /* height: 306px; */
 }
 
 .book_plan_header,
@@ -357,8 +368,8 @@ h2.book_plan_header {
 
 a .book_plan_button {
   align-self: center;
-  font-family: The Gloves;
-  font-size: 48px;
+  font-family: TheGloves;
+  font-size: 30px;
 }
 
 .book_plan_button button {
@@ -381,7 +392,6 @@ a .book_plan_button {
   top: 63%;
   left: 51%;
 }
-
 .footer {
   background-color: #c72734;
   height: 60vh;
@@ -544,3 +554,10 @@ a {
   padding-left: 1%;
   font-size: 36px;
 }
+.hscroll {
+  padding-bottom: 0;
+  margin: 0;
+  /* omg why wont that white band go away, i hate it and want to sleep */
+}
+
+/* it still doesnt work but i am at my limit and i cant do this anymore, im too blonde to code :( */

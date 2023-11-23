@@ -76,7 +76,7 @@ gsap.to(sword, {
   scrollTrigger: {
     trigger: ".furious",
     start: "top 30%",
-    end: "+=300",
+    end: "+=600",
     toggleActions: "play reset none none",
   },
 });
@@ -230,7 +230,7 @@ gsap.fromTo(
       containerAnimation: horizontalScroll,
       trigger: ".titre",
       start: "30% 40%",
-      markers: true,
+      // markers: true,
     },
   }
 );
@@ -251,7 +251,7 @@ quotes.forEach((quote) => {
         containerAnimation: horizontalScroll,
         trigger: quote,
         start: "top 70%",
-        // markers:true,
+        // markers: true,
       },
     }
   );
@@ -269,8 +269,8 @@ gsap.fromTo(
     scrollTrigger: {
       containerAnimation: horizontalScroll,
       trigger: ".book",
-      start: "30% 40%",
-      markers: true,
+      start: "10% 20%",
+      // markers: true,
     },
   }
 );
